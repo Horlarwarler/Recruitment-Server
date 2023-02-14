@@ -23,6 +23,8 @@ fun Application.configureRouting(
 
 ) {
     val dataRepoInterface by inject<dataRepoInterface> ()
+    val baseUrl = System.getenv("RAILWAY_URL")
+
     routing {
 
         post("/apply"){
