@@ -8,9 +8,7 @@ import com.example.plugins.*
 import org.koin.ktor.plugin.Koin
 
 fun main() {
-    val baseUrl = System.getenv("RAILWAY_URL")
-
-    embeddedServer(Netty,port=3000, host = baseUrl, module = Application::module)
+    embeddedServer(Netty, port = 8080, host = "0.0.0.0", module = Application::module)
         .start(wait = true)
 }
 

@@ -7,7 +7,7 @@ import org.litote.kmongo.coroutine.coroutine
 import org.litote.kmongo.reactivestreams.KMongo
 
 val mainModule = module {
-    val connectionString = "mongodb+srv://Horlarwarler:PDiP6ahQFykSFahs@cluster0.za1kgzq.mongodb.net/?retryWrites=true&w=majority"
+    val connectionString = "mongodb+srv://Horlarwarler:PDiP6ahQFykSFahs@cluster0.za1kgzq.mongodb.net/RecruitmentDatabase?retryWrites=true&w=majority"
     single {
             KMongo.createClient(connectionString)
                 .coroutine
